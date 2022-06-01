@@ -1,8 +1,14 @@
 {
 	"name": "resume-marker",
+	"version": "0.1.0",
 	"scripts": {
 		"build": "tsc"
 	},
+	"files": [
+		"/client",
+		"/lib",
+		"/themes"
+	],
 	"dependencies": {
 		"@types/react": "^18.0.10",
 		"@types/react-dom": "^18.0.5",
