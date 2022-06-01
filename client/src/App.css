@@ -1,0 +1,18 @@
+.page {
+  padding: 12px;
+}
+
+.resume {
+  max-width: 794px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px 1px rgb(0 0 0 / 15%);
+  padding: 18px 24px 12px 24px;
+}
+
+@media print {
+  .resume {
+    box-shadow: none;
+  }
+}
+
+

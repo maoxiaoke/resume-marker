@@ -1,0 +1,35 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-name {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.profile-avatar {
+  width: 150px;
+  text-align: center;
+}
+
+.profile-left {
+  width: 100%;
+}
+
+.profile-avatar img {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+}
+
+.profile-infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+}
