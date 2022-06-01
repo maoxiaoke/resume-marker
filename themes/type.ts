@@ -8,17 +8,25 @@ export interface ThemeOptions {
     github?: string;
     blog?: string;
     avator?: string;
-  },
+  };
   educations: Array<{
     eduTime: [Date, Date];
     school: string;
     degree: string;
-  }>,
+  }>;
   selfIntroduction: string;
   workExperience: Array<{
     companyName: string;
     department: string;
     workTime: [Date, Date] | [Date, null];
     workDesc: string;
+  }>;
+  projects: Array<{
+    name: string;
+    role: string;
+    time: string;
+    github?: string;
+    intro?: string;
+    desc: string;
   }>
 }

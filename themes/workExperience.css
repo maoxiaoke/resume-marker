@@ -1,0 +1,10 @@
+.exp-infos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.exp-desc {
+  margin-top: 4px;
+  line-height: 1.5;
+}

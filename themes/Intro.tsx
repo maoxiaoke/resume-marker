@@ -6,7 +6,7 @@ const Intro = ({ selfIntroduction }: { selfIntroduction: ThemeOptions['selfIntro
   return (
     <>
       <Divider title='自我介绍' />
-      <span style={{ lineHeight: 1.2 }}>{selfIntroduction}</span>
+      <span style={{ lineHeight: 1.5 }}>{selfIntroduction}</span>
     </>
   )
 }

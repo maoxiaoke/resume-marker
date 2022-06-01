@@ -70,17 +70,21 @@ const ProfileItem = ({
 
 const Profile = ({
   name,
-  avator
+  avator,
+  mobile,
+  email,
+  github,
+  blog,
 }: ThemeOptions['profile']) => {
   return (
     <div className="profile">
       <div className="profile-left">
         <div className="profile-name">{name}</div>
         <div className="profile-infos">
-          <ProfileItem iconName="mobile" desc='(+86)130-5758-3790' />
-          <ProfileItem iconName="email" desc='maoxiaoke@outlook.com' type="mail" />
-          <ProfileItem iconName="github" desc='www.github.maoxiaoke' type="link" />
-          <ProfileItem iconName="blog" desc='https://www.nazha.co' type='link' />
+          <ProfileItem iconName="mobile" desc={mobile} />
+          <ProfileItem iconName="email" desc={email} type="mail" />
+          <ProfileItem iconName="github" desc={github} type="link" />
+          <ProfileItem iconName="blog" desc={blog} type='link' />
         </div>
       </div>
       <div className="profile-avatar">

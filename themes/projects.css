@@ -1,0 +1,23 @@
+.project-infos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.project-text {
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.project-text a {
+  color: inherit;
+}
+
+.project-role-button {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 2px;
+  background-color: #2F5785;
+  color: #fff;
+  font-weight: 500;
+}
