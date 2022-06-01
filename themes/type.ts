@@ -1,5 +1,3 @@
-type Date = `${number}${number}${number}${number}.${number}${number}.${number}${number}`;
-
 export interface ThemeOptions {
   profile: {
     name: string;
@@ -10,7 +8,7 @@ export interface ThemeOptions {
     avator?: string;
   };
   educations: Array<{
-    eduTime: [Date, Date];
+    eduTime: [string, string];
     school: string;
     degree: string;
   }>;
@@ -18,7 +16,7 @@ export interface ThemeOptions {
   workExperience: Array<{
     companyName: string;
     department: string;
-    workTime: [Date, Date] | [Date, null];
+    workTime: [string, string] | [string, null];
     workDesc: string;
   }>;
   projects: Array<{

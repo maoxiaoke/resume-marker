@@ -19,7 +19,7 @@ const WorkExperience = ({ projects }: { projects: ThemeOptions['projects'] }) =>
               </div>
               <span style={{ fontSize: '12px', opacity: 0.6 }} className="project-role-button">{project.role}</span>
             </div>
-            { project.github && <div className="project-text">Github Repo：<a href={project.github} target="_blank">{project.github}</a></div> }
+            { project.github && <div className="project-text">代码地址：<a href={project.github} target="_blank">{project.github}</a></div> }
             { project.intro && <div className="project-text"> 项目介绍：{project.intro} </div> }
             <div className="project-text">主要工作：{project.desc}</div>
           </>
