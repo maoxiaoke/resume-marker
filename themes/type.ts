@@ -10,9 +10,15 @@ export interface ThemeOptions {
     avator?: string;
   },
   educations: Array<{
-    eduTime: Date[];
+    eduTime: [Date, Date];
     school: string;
     degree: string;
   }>,
   selfIntroduction: string;
+  workExperience: Array<{
+    companyName: string;
+    department: string;
+    workTime: [Date, Date] | [Date, null];
+    workDesc: string;
+  }>
 }

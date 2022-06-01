@@ -5,6 +5,8 @@
 }
 
 .profile-name {
+  padding-left: 4px;
+  padding-bottom: 8px;
   font-size: 24px;
   line-height: 36px;
 }
@@ -27,9 +29,20 @@
 .profile-infos {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-row-gap: 6px;
 }
 
 .profile-item {
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-item svg {
+  font-size: 18px;
+}
+
+.profile-item a {
+  color: rgba(0,0,0,.85)
 }

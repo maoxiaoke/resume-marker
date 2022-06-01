@@ -1,0 +1,18 @@
+.resume-divider {
+  display: flex;
+  margin: 12px 0;
+  align-items: center;
+}
+
+.divider-line {
+  margin-left: 6px;
+  flex: 1;
+  height: 1px;
+  background-color: #2F5785;
+}
+
+.divider-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2F5785;
+}

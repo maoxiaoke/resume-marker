@@ -27,16 +27,30 @@ export function BxBxlGmail(props: SVGProps<SVGSVGElement>) {
   )
 }
 
+type ContentType = 'mail' | 'text' | 'link';
+type IconName = 'mobile' | 'email' | 'blog' | 'github';
 
+const ProfileContent = (type: ContentType, content: string) => {
+  switch (type) {
+    case 'link':
+      return <a href={content} target="_blank">{content}</a>;
+      break;
+    case 'mail':
+      return <a href={`mailto:${content}`}>{content}</a>
+      break;
+    default:
+      return <span>{content}</span>
+  }
+}
 
 const ProfileItem = ({
   iconName,
   desc,
   type = 'text'
 }: {
-  iconName: 'mobile' | 'email' | 'blog' | 'github',
+  iconName: IconName,
   desc: string,
-  type?: 'mail' | 'link' | 'text'
+  type?: ContentType
 }) => {
   const Icon = new Map([
     ['mobile', BxBxsPhone],
@@ -48,8 +62,8 @@ const ProfileItem = ({
   return (
     <div className="profile-item">
       <Icon color="#2F5785" />
-
-      <span>{ desc }</span>
+      <span>&nbsp;&nbsp;</span>
+      {ProfileContent(type, desc)}
     </div>
   )
 }
@@ -63,10 +77,10 @@ const Profile = ({
       <div className="profile-left">
         <div className="profile-name">{name}</div>
         <div className="profile-infos">
-          <ProfileItem iconName="github" desc='fsfd' />
+          <ProfileItem iconName="mobile" desc='(+86)130-5758-3790' />
           <ProfileItem iconName="email" desc='maoxiaoke@outlook.com' type="mail" />
-          <ProfileItem iconName="mobile" desc='fsfd' />
-          <ProfileItem iconName="blog" desc='fsfd' />
+          <ProfileItem iconName="github" desc='www.github.maoxiaoke' type="link" />
+          <ProfileItem iconName="blog" desc='https://www.nazha.co' type='link' />
         </div>
       </div>
       <div className="profile-avatar">
